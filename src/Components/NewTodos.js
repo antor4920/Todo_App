@@ -3,11 +3,20 @@ import React, { useState } from "react";
 import Style from "./ParticulerTask.module.css";
 
 const NewTodos = (props) => {
-  const [newTask, setnewTask] = useState("");
+  const [newTask, setnewTask] = useState({ Task: "", desc: "" });
+
+  const { Task, desc } = newTask;
+
+  const handleChange = (event) => {
+    const name = event.target.name;
+    setnewTask((oldTodo) => {
+      return { ...oldTodo, [name]: event.target.value };
+    });
+  };
 
   const SaveTask = (event) => {
     event.preventDefault();
-    props.TakeTask(newTask);
+    props.TaskAdding(newTask);
   };
 
   return (
@@ -15,16 +24,16 @@ const NewTodos = (props) => {
       <form onSubmit={SaveTask}>
         <div className={Style.Inputfield}>
           <label>Task: </label>
-          <input
-            type="Text"
-            onChange={(event) => {
-              setnewTask(event.target.value);
-            }}
-          />
+          <input type="Text" name="Task" value={Task} onChange={handleChange} />
         </div>
         <div className={Style.Inputfield}>
           <label>Discription: </label>
-          <input type="Text" />
+          <textarea
+            type="Text"
+            value={desc}
+            name="desc"
+            onChange={handleChange}
+          />
         </div>
         <button type="submit" className={Style.add_task}>
           Add Task

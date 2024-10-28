@@ -17,10 +17,17 @@ const list_of_task = [
 ];
 
 const Home = () => {
+  const [listofTask, setlistofTask] = useState(list_of_task);
+
+  const TaskAdding = (event) => {
+    setlistofTask([...listofTask, event]);
+  };
+
   return (
     <div className={Style.Homediv}>
-      <NewTodos />
-      <Mapping onMapping={list_of_task} />
+      <h1>TODO APP</h1>
+      <NewTodos TaskAdding={TaskAdding} />
+      <Mapping onMapping={listofTask} />
     </div>
   );
 };

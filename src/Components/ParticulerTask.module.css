@@ -2,7 +2,7 @@
     width: 95%;
     height: auto;
     background-color: rgb(86, 86, 86);
-    color: white;
+    color: rgb(227, 115, 18);
     /* border: 2px solid rgb(133, 166, 185) ; */
     border-radius: 0px 20px 20px 0px;
     margin-left: 10px;
@@ -26,13 +26,14 @@
 }
 .add_task{
     height: 30px;
-    width: 80px;
+    width: 110px;
     background-color: black;
-    color: rgba(255, 0, 0, 0.865);
-    border: 1px solid rgba(255, 0, 0, 0.687);
+    color: rgb(227, 115, 18);
+    border: 1px solid rgba(227, 115, 18, 0.654);
     border-radius: 10px;
     margin-top: 10px;
     margin-bottom: 5px;
+    font-weight: bold;
 }
 .dlt_btn:hover, .add_task:hover{
     scale: 1.05;
@@ -45,14 +46,19 @@
     margin: 15px 10px 0px 10px;
 
     display: flex;
-    justify-content:space-around;
+    justify-content:space-between;
     align-items: center;
+}
+
+.Inputfield input,textarea{
+    width: 80%;
+    background-color:rgba(236, 233, 233, 0.64) ;
 }
 
 .Homediv{
     background-color: rgb(86, 86, 86);
     width: 100%;
-    height: auto;
+    height: 100%;
     margin: 0px;
     display: flex;
     flex-direction: column;
@@ -61,7 +67,7 @@
 }
 
 .Mappingdiv{
-    background-color: black;
+    background-color: rgba(65, 63, 60, 0.669);
     color: aliceblue;
     width: 50%;
     height: 500px;
@@ -71,19 +77,26 @@
 }
 
 .newtoddiv{
-    background-color: rgb(161, 164, 164);
-    margin-top:20px ;
+    background-color: rgba(52, 47, 41, 0.707);
+    color: rgb(227, 115, 18);
+    /* margin-top:20px ; */
     width: 50%;
-    height: 150px;
+    height: auto;
     border-radius: 20px;
     text-align: center;
+    font-weight: bold;
 
 }
 
 h3,p{
     padding: 0px;
-    margin: 0px 0px 0px 30px;
-    
+    margin: 0px 0px 0px 30px;  
+}
+
+h1{
+    padding: 0px;
+    margin: 20px 0px 20px 0px; 
+    color: rgb(227, 115, 18) ;
 }
 
 
