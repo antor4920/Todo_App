@@ -1,9 +1,89 @@
 .TaskandDesc{
-    width: 50%;
-    height: 100px;
-    background-color: rgb(209, 166, 166);
+    width: 95%;
+    height: auto;
+    background-color: rgb(86, 86, 86);
     color: white;
-    border: 2px solid rgb(133, 166, 185) ;
-    border-radius: 5px;
-    margin: 10px;
+    /* border: 2px solid rgb(133, 166, 185) ; */
+    border-radius: 0px 20px 20px 0px;
+    margin-left: 10px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0px 10px 0px ;
 }
+
+/* /button section */
+
+.dlt_btn{
+    height: 30px;
+    width: 80px;
+    background-color: black;
+    color: rgba(255, 0, 0, 0.865);
+    border: 1px solid rgba(255, 0, 0, 0.687);
+    border-radius: 10px;
+    margin-right: 25px;
+}
+.add_task{
+    height: 30px;
+    width: 80px;
+    background-color: black;
+    color: rgba(255, 0, 0, 0.865);
+    border: 1px solid rgba(255, 0, 0, 0.687);
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+.dlt_btn:hover, .add_task:hover{
+    scale: 1.05;
+}
+
+/* Input and label div */
+
+.Inputfield{
+    /* background-color: red; */
+    margin: 15px 10px 0px 10px;
+
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+}
+
+.Homediv{
+    background-color: rgb(86, 86, 86);
+    width: 100%;
+    height: auto;
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.Mappingdiv{
+    background-color: black;
+    color: aliceblue;
+    width: 50%;
+    height: 500px;
+   
+    border-radius: 20px;
+
+}
+
+.newtoddiv{
+    background-color: rgb(161, 164, 164);
+    margin-top:20px ;
+    width: 50%;
+    height: 150px;
+    border-radius: 20px;
+    text-align: center;
+
+}
+
+h3,p{
+    padding: 0px;
+    margin: 0px 0px 0px 30px;
+    
+}
+
+

@@ -1,8 +1,9 @@
 import React, { useState } from "react";
 
+import Style from "./ParticulerTask.module.css";
+
 const NewTodos = (props) => {
   const [newTask, setnewTask] = useState("");
-  // const [newDis, setnewDis] = useState("");
 
   const SaveTask = (event) => {
     event.preventDefault();
@@ -10,9 +11,9 @@ const NewTodos = (props) => {
   };
 
   return (
-    <div>
+    <div className={Style.newtoddiv}>
       <form onSubmit={SaveTask}>
-        <div>
+        <div className={Style.Inputfield}>
           <label>Task: </label>
           <input
             type="Text"
@@ -21,16 +22,13 @@ const NewTodos = (props) => {
             }}
           />
         </div>
-        <div>
+        <div className={Style.Inputfield}>
           <label>Discription: </label>
-          <input
-            type="Text"
-            // onChange={(event) => {
-            //   setnewDis(event.target.value);
-            // }}
-          />
+          <input type="Text" />
         </div>
-        <button type="submit">Add Task</button>
+        <button type="submit" className={Style.add_task}>
+          Add Task
+        </button>
       </form>
     </div>
   );

@@ -1,11 +1,12 @@
 import React from "react";
 import Particuler_Mapping from "./Particuler_Mapping";
+import Style from "./ParticulerTask.module.css";
 
 const Mapping = (props) => {
   return (
-    <div>
-      {props.onMapping.map((x, index) => (
-        <Particuler_Mapping key={index} ParticulerTask={x} />
+    <div className={Style.Mappingdiv}>
+      {props.onMapping.map((x) => (
+        <Particuler_Mapping key={x.id} ParticulerTask={x} />
       ))}
     </div>
   );

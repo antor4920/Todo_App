@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Mapping from "./Mapping";
 import NewTodos from "./NewTodos";
+import Style from "./ParticulerTask.module.css";
 
 const list_of_task = [
   {
@@ -16,15 +17,9 @@ const list_of_task = [
 ];
 
 const Home = () => {
-  // const [TaskName, setTaskName] = useState(list_of_task);
-
-  // const TakeTask = (newTask) => {
-  //   setTaskName([...TaskName, newTask]);
-  // };
-
   return (
-    <div>
-      {/* <NewTodos TakeTask={TakeTask} /> */}
+    <div className={Style.Homediv}>
+      <NewTodos />
       <Mapping onMapping={list_of_task} />
     </div>
   );
