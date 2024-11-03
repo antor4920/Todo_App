@@ -6,7 +6,7 @@ const Mapping = (props) => {
   return (
     <div className={Style.Mappingdiv}>
       {props.onMapping.map((x) => (
-        <Particuler_Mapping key={x.id} ParticulerTask={x} />
+        <Particuler_Mapping key={x.id} ParticulerTask={x.event} />
       ))}
     </div>
   );

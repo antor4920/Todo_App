@@ -17,6 +17,7 @@ const NewTodos = (props) => {
   const SaveTask = (event) => {
     event.preventDefault();
     props.TaskAdding(newTask);
+    setnewTask({ Task: "", desc: "" });
   };
 
   return (

@@ -18,16 +18,17 @@
 .dlt_btn{
     height: 30px;
     width: 80px;
-    background-color: black;
-    color: rgba(255, 0, 0, 0.865);
-    border: 1px solid rgba(255, 0, 0, 0.687);
+    background-color: rgba(0, 0, 0, 0.838);
+    color: rgb(227, 115, 18);
+    border: 1px solid rgba(227, 115, 18, 0.654);
     border-radius: 10px;
     margin-right: 25px;
+    /* margin-left: 10px; */
 }
 .add_task{
     height: 30px;
     width: 110px;
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.838);
     color: rgb(227, 115, 18);
     border: 1px solid rgba(227, 115, 18, 0.654);
     border-radius: 10px;
@@ -43,7 +44,7 @@
 
 .Inputfield{
     /* background-color: red; */
-    margin: 15px 10px 0px 10px;
+    margin: 15px 40px 0px 40px;
 
     display: flex;
     justify-content:space-between;
@@ -51,7 +52,7 @@
 }
 
 .Inputfield input,textarea{
-    width: 80%;
+    width: 60%;
     background-color:rgba(236, 233, 233, 0.64) ;
 }
 
@@ -78,7 +79,7 @@
 
 .newtoddiv{
     background-color: rgba(52, 47, 41, 0.707);
-    color: rgb(227, 115, 18);
+    color: rgba(236, 233, 233, 0.64);
     /* margin-top:20px ; */
     width: 50%;
     height: auto;
