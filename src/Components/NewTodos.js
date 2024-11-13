@@ -8,9 +8,10 @@ const NewTodos = (props) => {
   const { Task, desc } = newTask;
 
   const handleChange = (event) => {
-    const name = event.target.name;
+    const Name = event.target.name;
+
     setnewTask((oldTodo) => {
-      return { ...oldTodo, [name]: event.target.value };
+      return { ...oldTodo, [Name]: event.target.value };
     });
   };
 
