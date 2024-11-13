@@ -27,11 +27,16 @@ const Home = () => {
     });
   };
   // console.log(listofTask);
+  const handledelete = (ID) => {
+    const AfterDelete = listofTask.filter((D) => D.id !== ID);
+    setlistofTask(AfterDelete);
+  };
+
   return (
     <div className={Style.Homediv}>
       <h1>TODO APP</h1>
       <NewTodos TaskAdding={TaskAdding} />
-      <Mapping onMapping={listofTask} />
+      <Mapping onMapping={listofTask} Handledelete={handledelete} />
     </div>
   );
 };
